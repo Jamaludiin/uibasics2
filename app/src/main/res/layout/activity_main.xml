@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Box 1"
+            android:id="@+id/ckBox1"
+            android:checked="true"/>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Box 2"
+            android:id="@+id/ckBox2"
+            android:checked="false"
+            android:layout_toRightOf="@+id/ckBox1"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Box 3"
+            android:id="@+id/ckBox3"
+            android:checked="false"
+            android:layout_toRightOf="@+id/ckBox2"
+            android:layout_marginLeft="20dp"/>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANSWER 1"
+            android:id="@+id/ckBox4"
+            android:checked="false"
+            android:layout_below="@+id/ckBox1"
+            android:layout_alignStart="@id/ckBox1"
+            android:layout_marginTop="50dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANSWER 2"
+            android:id="@+id/ckBox5"
+            android:checked="false"
+            android:layout_below="@+id/ckBox2"
+            android:layout_alignStart="@id/ckBox2"
+            android:layout_marginTop="50dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANSWER 3"
+            android:id="@+id/ckBox6"
+            android:checked="false"
+            android:layout_below="@+id/ckBox3"
+            android:layout_alignStart="@id/ckBox3"
+            android:layout_marginTop="50dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ckBox4"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/rdGrpDayNight">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Night"
+                android:checked="true"
+                android:id="@+id/rdBtnNight"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:id="@+id/rdBtnDay"
+                android:layout_marginLeft="50dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None of them"
+                android:id="@+id/rdBtnNoneOFthem"
+                android:layout_marginLeft="50dp"/>
+
+        </RadioGroup>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar1"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/rdGrpDayNight"
+            android:layout_marginTop="50dp"
+            android:visibility="visible">
+
+        </ProgressBar>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/progressBar1"
+            android:layout_marginTop="50dp"
+            android:visibility="visible"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="30"
+            android:max="100"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        </ProgressBar>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
